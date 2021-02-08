@@ -1,23 +1,26 @@
-import { example, anotherExample } from '../src/data.js';
 
+import { filterByGender } from '../src/data.js';
+import { filterByStatus } from '../src/data.js';
+import { filterBySpecies } from '../src/data.js';
+import {dataMock} from './dataMock.js'
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});
+describe("the filter should return the data",()=>{
+  it("filterByGender should return the selected gender", ()=>{
+    const filters = filterByGender(dataMock, "Male")
+    filters.forEach((dataMock) => {
+      expect(dataMock.gender).toBe("Male");
+    });   
+  })
+  it("filterByStatus should return the selected status",()=>{
+    const filters = filterByStatus(dataMock, "Alive")
+    filters.forEach((dataMock) =>{
+      expect(dataMock.status).toBe("Alive");
+    });
+  })
+  it("filterBySpecies should return the selected specie",()=>{
+    const filters = filterBySpecies(dataMock, "Human")
+    filters.forEach((dataMock) =>{
+      expect(dataMock.species).toBe("Human");
+    });
+  })
+})

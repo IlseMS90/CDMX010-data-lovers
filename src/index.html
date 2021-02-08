@@ -2,11 +2,66 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width">
+    <title>DataLovers</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="style.css"  rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div id="root"></div>
+    <!-- HEADER SCREEN -->
+    <header>
+      <container class="contHeader">
+        <img class="logorm" src="images/logorm.png" alt="logorm">
+      </container>
+    </header>
+    <!-- FILTER SCREEN -->
+    <container id="filter" class="buttonFilter">
+      <div id= "instructions"><h1><br>Choose the category and discover you favourite characters</h1><br></div>
+      <div id= "species"><h2>&nbsp&nbsp&nbspSpecies</h2>
+        <div id="Alien" class="circleS filtros"><img src="../images/button/alien.png" alt="alien"></div>
+        <div id="Animal" class="circleS filtros"> <img src="../images/button/animal.PNG" alt="animal"> </div>     
+        <div id="Cronenberg" class="circleS filtros"><img src="../images/button/cronenberg.PNG" alt="cronenberg"></div>     
+        <div id="Disease" class="circleS filtros"> <img src="../images/button/disease.PNG" alt="disease"> </div>     
+        <div id="Human"class="circleS filtros"> <img src="../images/button/human.PNG" alt="human"> </div>     
+        <div id="Humanoid" class="circleS filtros"> <img src="../images/button/humanoid.PNG" alt="humanoid"></div>         
+        <div id="Mytholog" class="circleS filtros"> <img src="../images/button/mytholog.PNG" alt="mytholog"> </div>     
+        <div id="Poopybutthole" class="circleS filtros" > <img src="../images/button/poopybutthole.PNG" alt="poopybutthole"></div>     
+        <div id="Robot" class="circleS filtros"> <img src="../images/button/robot.PNG" alt="robot"></div>     
+        <div id="Vampire" class="circleS filtros"> <img src="../images/button/vampire.PNG" alt="vampire"> </div>
+      </div>
+      <div id= "gender"><h2>&nbsp&nbsp&nbspGender</h2>
+        <div id="Female" class="circleG filtros"><img src="../images/button/female.PNG" alt="female"> </div>
+        <div id="Male" class="circleG filtros"> <img src="../images/button/male.PNG" alt="male"> </div>
+        <div id="unknown" class="circleG filtros"> <img src="../images/button/unknow.PNG" alt="unknow"></div>
+      </div> 
+      </div>
+      <div id= "status"><h2>&nbsp&nbsp&nbspStatus</h2>
+        <div id="Alive" class="circleSt filtros" >  <img src="../images/button/alive.PNG" alt="alive"> </div>
+        <div id="Dead" class="circleSt filtros" > <img src="../images/button/dead.PNG" alt="dead"></div>
+      </div>          
+    </container>
+    <!-- RESULTS SCREEN -->
+    <container id="customResult" class="customResult">
+      <div id="instructions2"><h1><b>Order the characters</b></h1></div>
+      <br><br><br><br> 
+      <div id="orderCards">
+        <button id="orderA" class="orderA A">ABCDEFGHIJKLMNOPQRSTUVWXYZ</button>
+        <button id="orderZ" class="orderA Z">ZYXWVUTSRQPONMLKJIHGFEDCBA</button>
+      </div>
+      <div id="tarjetas"></div>
+      <article id="resultado" class="contenedor"></article><br><br> 
+      <div>
+        <button id="goHome" class="goHome" type="reset" value="Reset">Go Home</button>
+      </div>
+      <br><br><br>
+    </container>
+    <!-- FOOTER -->
+    <footer>
+        <p>"Nobody  exists  on  purpose,  nobody  belongs  anywhere,  everybody's  gonna  die. Come  watch  TV." -Morty </p>
+    </footer>
     <script src="main.js" type="module"></script>
-  </body>
-</html>
+    </body>
+  </html>
+    
+        

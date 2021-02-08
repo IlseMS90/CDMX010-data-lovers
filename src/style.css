@@ -1,0 +1,239 @@
+*{
+  margin: 0;
+}
+
+.contHeader{
+  height:255px;
+  background-image: linear-gradient(180deg, rgb(10, 10, 10),#4b4949);
+  border-bottom: 10px solid#76EAD7;
+  display: flex;
+  width: 100%;
+  margin: auto;
+} 
+
+.logorm{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    position:sticky;
+    left: 500px;
+    display: flex;
+    max-width: 100%;
+}
+
+h1{
+  position: relative;
+  object-fit: contain;
+  font-family: 'Lacquer', cursive;  
+  color:#c4fb6d;
+  left: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+h2{
+  display: flex;
+  font-family: 'Lacquer', cursive;  
+  color: #101011;
+}
+
+#species h2{
+   position: absolute;
+   font-size: 33px;
+   color: #9897CF;
+  }
+
+#status h2{
+    font-size: 33px;
+    color:rgba(252, 255, 121, 0.88);;
+
+  }
+
+#gender h2{
+    font-size: 33px;
+    color: #EB9898;
+  
+  }
+
+.circleS{
+  border-radius: 400px;
+  border: 40px solid #9897CF;
+  overflow: hidden;
+}
+
+.circleSt{
+  border-radius: 400px;
+  border: 50px solid rgba(252, 255, 121, 0.88);
+  overflow: hidden;
+}
+
+.circleG{
+  border-radius: 400px;
+  border: 40px solid #EB9898;
+  overflow: hidden;
+}
+ 
+.filtros{
+  display: inline-flex;
+  justify-content: center;
+  clip-path: circle(45% at 50% 50%);
+  transform: scale(0.7, 0.7);
+  -ms-transform: scale(0.7 0.7);
+  -webkit-transform: scale(0.7, 0.7);
+}
+
+
+.filtros:hover{
+  transform: scale(1.2), rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  clip-path: circle(43% at 50% 50%);
+  border: 40px solid #76EAD7;  
+}
+
+
+.buttonFilter{
+  background-image: linear-gradient(180deg,#4b4949, rgb(10, 10, 10));
+}
+
+.buttonFilter img{
+  pointer-events: none;
+}
+
+  /* SECCION CUSTOM RESULT */
+.customResult{
+  display: flex;
+  max-width: 100%;
+  background-image: linear-gradient(90deg, rgb(10, 10, 10),#4b4949);
+  padding: 10px;
+  border: 2px solid rgb(8, 8, 8);
+}
+
+#orderCards button{
+  padding: 15px 30px;
+  letter-spacing: 3px;
+  font-size: 12px bold;
+  color: #545454;
+  background:  #c4fb6d;
+  border: #c4fb6d;
+  display: inline-flex;
+  transition: 0.5s;
+}
+
+#orderCards button:hover{
+  background: #76EAD7;
+  box-shadow: 0 0 10px #76EAD7;
+}
+
+.goHome{
+  position: relative;
+  display: inline-block;
+  right: 20px;
+  padding: 15px 30px;
+  letter-spacing: 3px;
+  font-size: 12px bold;
+  color:  #545454;
+  background:#76EAD7;
+  border:#76EAD7;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.goHome:hover{
+  background: #c4fb6d;
+  box-shadow: 0 0 10px #c4fb6d;
+}
+
+
+
+/* CARDS DESIGN */
+
+.contenedor{
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: repeat(3, 8fr);
+  width: 80%; /*el ancho que abarcan*/
+  gap: 17px;
+  margin: auto;
+  justify-items: center;
+  align-items: center;  
+}
+.card{
+  height: 230px;
+  width: 300px;
+  overflow: hidden; /*para que el texto no afecte*/
+  margin: auto;
+  padding: 10px 30px;
+  border-radius: 2%;
+  border: 1px solid  #151616;
+  transition: all .4s ease-in-out; /*transición en todas las propiedades*/
+  box-shadow: 0px 1px 5px 0px rgb(254, 255, 254);
+  text-align: center;
+  background: linear-gradient(70deg, #76EAD7, rgb(160, 82, 160), #414242);
+  font-family: 'Lacquer', cursive; 
+}
+
+.card:hover{
+  height: 450px;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 5px 10px 30px  #76EAD7;
+  background: linear-gradient(70deg, #6eeb89,#c4fb6d, #414242);
+  font-size: 25px;
+  font-family: 'Lacquer', cursive; 
+}
+
+.card-encabezado img{
+ position: relative;
+ border-radius: 50%;
+ display: block; /*para que ocupe el espacio disponible*/
+ height: 200px;
+ width: 200px;
+ border-top: 8px solid  #76EAD7; /*border de la imagen*/
+ border-bottom: 8px solid  #76EAD7;
+ object-fit: cover; /*para que la imagen no se distorsione*/
+ margin: 20px auto; /*auto para que se centre*/
+ transition: all 0.3s ease;  
+}
+.card-encabezado{
+  position:relative; /*para manejar sus pseudoelementos*/
+}
+
+.info-personal:nth-child(1){
+  font-size: 50px;
+  font-weight: bold;
+  padding: 10px;
+  line-height: 25px;
+}
+
+.card-contenido h3{
+  font-size: 25px;
+  color:  #76EAD7;
+  background-color: rgb(25, 27, 27);
+  font-weight: bold;
+}
+
+.info-personal{
+  color: rgb(94, 89, 89);
+  font-weight: bold;
+}
+
+/* SECCIÓN FOOTER */
+#footer {
+  width: 100%;
+  background:#c4fb6d;
+  text-align: center;
+  line-height: 50px;
+  padding-bottom: 0;
+ 
+} 
+
+footer p {
+  font-family: 'Lacquer', cursive;  
+  color: #101011;
+  left: 10px;
+  background-color: #c4fb6d;
+  width: 100%;
+  text-align: center;
+}
