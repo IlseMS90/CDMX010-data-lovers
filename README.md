@@ -55,7 +55,7 @@ Las historias de usuario fueron creadas entendiendo las necesidades de los usuar
 ​
 #### Prototipo de baja fidelidad
 ![](miro.png)
-#### Prototipo de lata fidelidad
+#### Prototipo de alta fidelidad
 ![](display1.png)
 ![](display2.png)
 ![](display3.png)
