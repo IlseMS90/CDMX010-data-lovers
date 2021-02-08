@@ -56,7 +56,9 @@ Las historias de usuario fueron creadas entendiendo las necesidades de los usuar
 ##### Prototipo de baja fidelidad
 ![](miro.png)
 ##### Prototipo de lata fidelidad
-**imagen**
+![](display1.png)
+![](display2.png)
+![](display3.png)
 ##### Pruebas unitarias
 ​
 En esta fase del proyecto se realizaron pruebas unitarias de las funciones de filtrado.
