@@ -54,7 +54,7 @@ Las historias de usuario fueron creadas entendiendo las necesidades de los usuar
 #### Diseño de la interfaz del usuario
 ​
 ##### Prototipo de baja fidelidad
-**imagen**
+![](miro.png)
 ##### Prototipo de lata fidelidad
 **imagen**
 ##### Pruebas unitarias
