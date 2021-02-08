@@ -53,13 +53,13 @@ Las historias de usuario fueron creadas entendiendo las necesidades de los usuar
 ​
 #### Diseño de la interfaz del usuario
 ​
-##### Prototipo de baja fidelidad
+#### Prototipo de baja fidelidad
 ![](miro.png)
-##### Prototipo de lata fidelidad
+#### Prototipo de lata fidelidad
 ![](display1.png)
 ![](display2.png)
 ![](display3.png)
-##### Pruebas unitarias
+#### Pruebas unitarias
 ​
 En esta fase del proyecto se realizaron pruebas unitarias de las funciones de filtrado.
 **imagen**
@@ -70,7 +70,6 @@ El proyecto está implementado completamente en JavaScript
 frameworks, solo [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e).
 ​
 Asimismo, no se utilizó la _pseudo-variable_ `this`.
-
 
 
 # Data Lovers
