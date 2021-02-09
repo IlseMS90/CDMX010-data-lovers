@@ -2,6 +2,8 @@
   margin: 0;
 }
 
+/* HEADER SECTION */
+
 .contHeader{
   height:255px;
   background-image: linear-gradient(180deg, rgb(10, 10, 10),#4b4949);
@@ -21,6 +23,8 @@
     max-width: 100%;
 }
 
+/* INSTRUCTIONS */
+
 h1{
   position: relative;
   object-fit: contain;
@@ -31,6 +35,7 @@ h1{
   text-align: center;
 }
 
+/* FILTER BUTTON */
 h2{
   display: flex;
   font-family: 'Lacquer', cursive;  
@@ -100,7 +105,7 @@ h2{
   pointer-events: none;
 }
 
-  /* SECCION CUSTOM RESULT */
+  /* CUSTOM RESULTS CONTAINER */
 .customResult{
   display: flex;
   max-width: 100%;
@@ -187,17 +192,17 @@ h2{
 .card-encabezado img{
  position: relative;
  border-radius: 50%;
- display: block; /*para que ocupe el espacio disponible*/
+ display: block; /* keep remaining space*/
  height: 200px;
  width: 200px;
- border-top: 8px solid  #76EAD7; /*border de la imagen*/
+ border-top: 8px solid  #76EAD7; /* image border*/
  border-bottom: 8px solid  #76EAD7;
- object-fit: cover; /*para que la imagen no se distorsione*/
- margin: 20px auto; /*auto para que se centre*/
+ object-fit: cover; /*avoid image distortion*/
+ margin: 20px auto; /*center auto*/
  transition: all 0.3s ease;  
 }
 .card-encabezado{
-  position:relative; /*para manejar sus pseudoelementos*/
+  position:relative; /*control pseudoelements*/
 }
 
 .info-personal:nth-child(1){
@@ -219,7 +224,7 @@ h2{
   font-weight: bold;
 }
 
-/* SECCIÓN FOOTER */
+/*FOOTER SECTION*/
 #footer {
   width: 100%;
   background:#c4fb6d;

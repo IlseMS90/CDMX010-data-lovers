@@ -32,11 +32,7 @@ function filterByCategory (data) {
   filtros.forEach(filtro => {
     filtro.addEventListener("click", function(event){
       event.preventDefault();
-      console.log('click');
-      console.log(event);
-      console.log('event.target.id', event.target.id);
-      console.log('event parent', event.target.parentElement.id);
-
+      
       let target;
       if(event.target.parentElement.id === 'gender'){
         console.log('gender si');
@@ -54,22 +50,12 @@ function filterByCategory (data) {
         target = filterBySpecies(data, event.target.id)
       }
     
-      // if(event.target.parentElement.id === 'status'){
-      //   console.log('status si');
-      //   // target = data.filter(personaje => personaje.status === "unknown")
-      //   target = filterByUnknown(data, "unknown")
-      // }
-      //console.log(data);
-      console.log('target', target);
       imprimirData(target);
       showSection();
       orderTargetA(target);
       orderTargetZ(target);
       random(target);
-    
-      
-      //orderTarget(target);
-      // showSection(event.target.id);
+
     })
   });      
 };
